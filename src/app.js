@@ -25,13 +25,30 @@ const form = () => {
     <textarea class="text" placeholder="Rut" ></textarea>
     <textarea class="text" placeholder="E-mail" ></textarea>
     <textarea class="text" placeholder="Telefono Contacto"></textarea>   
+    <button class="btn" id="btnContinue">Continuar</button>   
+   </div>
+  </div>`
+ 
+
+  const btnContinue = document.getElementById("btnContinue");
+  btnContinue.addEventListener("click", formTwo);
+}
+
+const formTwo = () => {
+  h1Header.innerHTML=`Formulario Feedback`
+  root.innerHTML=`<div class="col s12">
+  <p>Información del Caso</p>
+   
+    <div class="seccion">
+    <textarea class="text" placeholder="Nombre"></textarea>
+ 
     <button class="btn">Continuar</button>   
    </div>
   </div>`
  
 
-  const btnContinue = document.getElementById("btnModal");
-  btnModal.addEventListener("click", formTwo);
+  // const btnContinue = document.getElementById("btnModal");
+  // btnModal.addEventListener("click", formTwo);
 }
 
 
