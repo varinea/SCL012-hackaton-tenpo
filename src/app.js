@@ -36,17 +36,27 @@ const form = () => {
 
 const formTwo = () => {
   h1Header.innerHTML=`Formulario Feedback`
-  root.innerHTML=`<div class="col s12">
+  root.innerHTML=`
+  <div class="containerTarjet">
   <p>Información del Caso</p>
+  
+  <select class="browser-default">
+    <option value="" disabled selected>Selecciona una opción</option>
+    <option value="1">Pago de cuentas</option>
+    <option value="2">Recargas de servicio</option>
+    <option value="3">Atención al Cliente</option>
+    <option value="4">Retiro de dinero</option>
+    <option value="5">Estado de cuenta</option>
+    <option value="6">Funcionamiento app</option>
+    <option value="7">Otro</option>
+  </select>
+
    
-    <div class="seccion">
-    <textarea class="text" placeholder="Nombre"></textarea>
- 
-    <button class="btn">Continuar</button>   
-   </div>
+  <input type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></input>
+
+   
   </div>`
  
-
   // const btnContinue = document.getElementById("btnModal");
   // btnModal.addEventListener("click", formTwo);
 }
