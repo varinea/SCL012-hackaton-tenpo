@@ -1,3 +1,48 @@
-#header {
-    background-color: blue;
+body {
+    background-color: #f7f7f7;
 }
+
+
+.father{
+	display: flex;
+    flex-flow: column nowrap;
+}
+
+hr{
+    color: gray;
+    size: 3px;
+}
+	header{
+		background: #00BAA4;
+        /* position: fixed; */
+        width: 100%;
+        padding: 5% 0% 15% 0%;
+        border-radius: 0% 0% 10% 10%;
+        text-align: center;
+    } 
+
+    .logo {
+        border-style: none;
+        width: 20%;
+    }
+    .h1 {
+            font-size: 3rem;
+            line-height: 110%;
+            margin: 2.8rem 0 1.68rem 0;
+            color: white;
+    }
+    #btn {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin-bottom: 10%;
+        border-radius: 5%;
+        text-align: center !important;
+
+    }
+    #root {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
