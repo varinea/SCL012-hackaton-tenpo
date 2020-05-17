@@ -13,7 +13,7 @@
 .header{
     background-color:#00BAA4;
     padding: 10%;
-    border-radius:1em;
+    border-radius:0% 0% 10% 10%;
 }
 .body{
     background:#f7f7f7;
@@ -37,7 +37,7 @@
     bottom: 0;
     width: 100%;
     background-color:#f7f7f7;
-    color: white;
+    color: #f7f7f7;
     display: flex;
     justify-content: space-evenly;
 

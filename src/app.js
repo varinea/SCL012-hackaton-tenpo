@@ -4,16 +4,18 @@ document.getElementById("change").addEventListener("click", () =>{
                            <p>Información Personal</p>
                             <div class="divider"></div>
                              <div class="seccion">
-                             <textarea class="text" placeholder="Nombre"></textarea>
-                             <textarea class="text" placeholder="Apellido"></textarea>
-                             <textarea class="text" placeholder="Rut" ></textarea>
-                             <textarea class="text" placeholder="E-mail" ></textarea>
-                             <textarea class="text" placeholder="Telefono Contacto"></textarea>   
-                             <button type="button" height="42" width="42"><a class="waves-effect waves-light btn"><i class="material-icons left">Continuar</i></a></button>   
+                             <textarea id="name" class="text" placeholder="Nombre"></textarea>
+                             <textarea id="surname" class="text" placeholder="Apellido"></textarea>
+                             <textarea id="rut" class="text" placeholder="Rut" ></textarea>
+                             <textarea id="email" class="text" placeholder="E-mail" ></textarea>
+                             <textarea id="namber" class="text" placeholder="Telefono Contacto"></textarea>   
+                             <button type="button" id="continue">Continuar</button> 
                             </div>
                            </div>`
 
                           }
 
 );
+
+
 
