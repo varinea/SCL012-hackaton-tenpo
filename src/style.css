@@ -86,7 +86,8 @@ hr{
             line-height: 110%;
             margin: 2.8rem 0 1.68rem 0;
             color: white;
-    }
+            
+            }
     .buttons {
         width: 300px;
         height: 100px;
@@ -104,4 +105,26 @@ hr{
         flex-wrap: nowrap;
         align-items: center;
     }
+   
+    .caja{
+        display: flex;
+        flex: 2 1 auto;
+        width:auto;
+        height: auto;
+        border-radius: 20px;
+        background-color: #E5E5E5;
+        margin: 5%;
+        font-size: x-small;
+        margin-bottom: 1%;
+        
+    }
+    .text {
+        text-align: left;
+        padding: 2%;
+          }
+    .img {
+        display: flex;
+        width: 20%;
+    }
+
     
