@@ -11,11 +11,7 @@
     border-radius: 10%;
     
 }
-.header{
-    background-color:#00BAA4;
-    padding: 10%;
-    border-radius:0% 0% 10% 10%;
-}
+
 .body{
     background:#f7f7f7;
 }
@@ -59,7 +55,7 @@
 
   }
  /* fer */
- 
+
 body {
     background-color: #f7f7f7;
 }
