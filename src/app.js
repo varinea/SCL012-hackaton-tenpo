@@ -51,7 +51,16 @@ const formTwo = () => {
     <option value="7">Otro</option>
   </select>
   <input type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></input>
-
+  <form method="post" enctype="multipart/form-data">
+  <div>
+    <label for="profile_pic">Choose file to upload</label>
+    <input type="file" id="profile_pic" name="profile_pic"
+          accept=".jpg, .jpeg, .png">
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
    
   </div>`
  
