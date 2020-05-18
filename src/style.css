@@ -11,12 +11,6 @@
 
 }
 
-.seccion {
-    display: inline;
-    align-self: stretch;
-
-}
-
 .text {
     border-radius: 1em;
     line-height: 2.5;
@@ -71,7 +65,6 @@ hr {
 
 header {
     background: #00BAA4;
-    /* position: fixed; */
     width: 100%;
     padding: 5% 0% 15% 0%;
     border-radius: 0% 0% 10% 10%;
@@ -250,5 +243,30 @@ header {
        font-size:large;
        color:white
    }
+   .hi{
+    background: white; 
+    border-radius:1em;
+    /* line-height: 2.5; */
+    margin-bottom: 15px;
+    height:42px; 
+    width:300px;
+    text-align: left;
+
+}
+
+.containerone{
+    background: white;
+    border-radius: 5%;
+
+    
+}
+.section{
+    
+    border-radius:1em;
+    display: grid;
+    justify-content:center;
+    
+
+}
   
     
