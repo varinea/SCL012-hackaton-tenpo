@@ -18,6 +18,7 @@
 .seccion{
    display: inline;
     align-self: stretch;
+    /* margin: -8em; */
 
 }
 .text{
@@ -25,9 +26,7 @@
     line-height: 2.5;
     margin-bottom: 15px;
 }
- .btn1{
-     background-color: blue;
- }
+
  .footer {
     position: fixed;
     left: 0;
@@ -88,4 +87,38 @@ hr{
             line-height: 110%;
             margin: 2.8rem 0 1.68rem 0;
             color: white;
+    }
+    .buttons {
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 5%;
+        border-radius: 5%;
+        background-color: white;
+        text-align: center !important;
+
+    }
+    #root {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .hi{
+        background: #f1d6ab;
+    }
+    
+    .containerone{
+        background:#e3b04b;
+        border-radius: 5%;
+    }
+    .section{
+        background: #e3b04b;
+        border-radius:1em;
+        display: grid;
+        align-items: center;
+       justify-content:center;
+        line-height: 2.5;
+    margin-bottom: 15px;
     }

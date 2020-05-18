@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,19 +21,31 @@
 <body>
 
 
-  <div id="root"> </div>
 
   <!-- Formulario FeedBack | Información Caso | Varinea -->
   <div class="father">
     <header class="header">
       <img class="logo" src="./img/logo_white.svg"></img>
-      <h1 class="h1">Formulario</h1>
+      <h1 class="h1" id="h1Header">Centro de Ayuda</h1>
+      <!-- <h1 class="h1" id="estado">Estado de Solicitud</h1> -->
 
     </header>
+    
+  <div id="root"> 
+    <button class="buttons" id="btnQuestions"><strong>Preguntas Frecuentes</strong></button>
+    <button class="buttons" id="btnClient"><strong>Atención al Cliente</strong></button>
+    <button class="buttons" id="btnFeedback"><strong>FeedBack</strong></button>
+    <button class="buttons" id="btn3Feedback"><strong>Estado de Solicitud</strong></button>
+  </div>
 
   </div>
 
-
+  <div class="footer">
+    <img src="batido.png"  id="icon" height="42" width="42">
+    <img src="batido.png"  id="icon" height="42" width="42">
+    <img src="batido.png"  id="icon" height="42" width="42">
+    
+  </div>
 
   <script src="app.js"></script>
 </body>
