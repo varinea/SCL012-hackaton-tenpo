@@ -126,5 +126,12 @@ hr{
         display: flex;
         width: 20%;
     }
+   #btnBack {
+       display: flex;
+       justify-content: start;
+       margin-left: 10%;
+       font-size:large;
+       color:white
+   }
 
     

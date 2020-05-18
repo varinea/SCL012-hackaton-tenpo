@@ -5,10 +5,11 @@ const btnClient = document.getElementById("btnClient");
 
 
 const feedback = () => {
+  window.location.hash = '/feedback';
   h1Header.innerHTML=`Feedback`
   root.innerHTML=`
-  <button class="buttons" id="feedbackForm"><strong>Formulario Feedback</strong></button>
-  <button class="buttons" id="feedbackState"><strong>Estado Feedback</strong></button>
+  <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario Feedback</strong></button>
+  <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado Feedback</strong></button>
   `
   const feedbackForm = document.getElementById("feedbackForm");
   feedbackForm.addEventListener("click", form);
@@ -16,6 +17,7 @@ const feedback = () => {
 }
 
 const form = () => {
+  window.location.hash = '/feedbackForm';
   h1Header.innerHTML=`Formulario Feedback`
   root.innerHTML=`<div class="col s12">
   <p>Información Personal</p>
@@ -36,6 +38,7 @@ const form = () => {
 
 
 const clientAtention = () => {
+  window.location.hash = '/clientAttention';
   h1Header.innerHTML=`Atención al Cliente`
   root.innerHTML=`<div class="caja">
   <img class="img" src="./img/mensaje.jpeg">
