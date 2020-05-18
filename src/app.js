@@ -3,7 +3,6 @@ const btnFeedback = document.getElementById("btnFeedback");
 const h1Header = document.getElementById("h1Header");
 const btnClient = document.getElementById("btnClient");
 
-
 const feedback = () => {
   window.location.hash = '/feedback';
   h1Header.innerHTML=`Feedback`
@@ -28,13 +27,48 @@ const form = () => {
     <textarea class="text" placeholder="Rut" ></textarea>
     <textarea class="text" placeholder="E-mail" ></textarea>
     <textarea class="text" placeholder="Telefono Contacto"></textarea>   
-    <button class="btn">Continuar</button>   
+    <button class="btn" id="btnContinue">Continuar</button>   
    </div>
   </div>`
  
 
+  const btnContinue = document.getElementById("btnContinue");
+  btnContinue.addEventListener("click", formTwo);
 }
 
+const formTwo = () => {
+  h1Header.innerHTML=`Formulario Feedback`
+  root.innerHTML=`
+  <div class="containerTarjet">
+  <p class="infoClass">Información del Caso</p>
+  
+  <select class="browser-default">
+    <option value="" disabled selected>Selecciona una opción</option>
+    <option value="1">Pago de cuentas</option>
+    <option value="2">Recargas de servicio</option>
+    <option value="3">Atención al Cliente</option>
+    <option value="4">Retiro de dinero</option>
+    <option value="5">Estado de cuenta</option>
+    <option value="6">Funcionamiento app</option>
+    <option value="7">Otro</option>
+  </select>
+  <input type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></input>
+  <form method="post" enctype="multipart/form-data">
+  <div>
+    <label for="profile_pic">Choose file to upload</label>
+    <input type="file" id="profile_pic" name="profile_pic"
+          accept=".jpg, .jpeg, .png">
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</form>
+   
+  </div>`
+ 
+  // const btnContinue = document.getElementById("btnModal");
+  // btnModal.addEventListener("click", formTwo);
+}
 
 
 const clientAtention = () => {
@@ -58,6 +92,5 @@ const clientAtention = () => {
 }
 
 btnFeedback.addEventListener("click", feedback);
-
 btnClient.addEventListener("click", clientAtention);
 
