@@ -1,5 +1,4 @@
 
-/* ferr */
 .container{
     margin: 0 auto;
     text-align: center;
@@ -18,7 +17,6 @@
 .seccion{
    display: inline;
     align-self: stretch;
-    /* margin: -8em; */
 
 }
 .text{
@@ -36,6 +34,7 @@
     color: #f7f7f7;
     display: flex;
     justify-content: space-evenly;
+    
 
   }
   .seccion{
@@ -43,17 +42,13 @@
     flex-flow: column nowrap;
     padding: 5%;
     bottom: 10%;
-    /* margin-bottom: 20%; */
   }
   .s12{
       padding: 5%;
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 20%;
-
-
   }
- /* fer */
 
 body {
     background-color: #f7f7f7;
@@ -106,19 +101,27 @@ hr{
         align-items: center;
     }
     .hi{
-        background: #f1d6ab;
+        background: #f1d6ab; 
+        border-radius:1em;
+        /* line-height: 2.5; */
+        margin-bottom: 15px;
+        height:42px; 
+        width:300px;
+        text-align: left;
+
     }
     
     .containerone{
         background:#e3b04b;
         border-radius: 5%;
+
+        
     }
     .section{
-        background: #e3b04b;
+        /* background: #e3b04b; */
         border-radius:1em;
         display: grid;
-        align-items: center;
-       justify-content:center;
-        line-height: 2.5;
-    margin-bottom: 15px;
+        justify-content:center;
+        
+    
     }

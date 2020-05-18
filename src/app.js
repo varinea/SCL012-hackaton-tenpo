@@ -2,7 +2,7 @@ const root = document.getElementById("root");
 const boton = document.getElementById("btnFeedback");
 const boton1 = document.getElementById("btn3Feedback");
 const h1Header = document.getElementById("h1Header");
-const estado =document.getElementById("estado");
+const estado = document.getElementById("estado");
 
 const cambiaRoot = () => {
   h1Header.innerHTML=`Formulario Feedback`
@@ -22,7 +22,7 @@ const cambiaRoot = () => {
 boton.addEventListener("click", cambiaRoot);
 
 const cambioRoot = () => {
-  h1Header.innerHTML=`Formulario Feedback`
+  estado.innerHTML=`Estado de Solicitud`
   root.innerHTML=`<div class="col s12">
    <div class="containerone">
     <p>Estado del Caso #56478</p>
