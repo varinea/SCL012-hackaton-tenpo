@@ -1,4 +1,3 @@
-
 const root = document.getElementById("root");
 const btnFeedback = document.getElementById("btnFeedback");
 const h1Header = document.getElementById("h1Header");
@@ -21,7 +20,15 @@ const feedback = () => {
 }
 
 const state = () => {
-  h1Header.innerHTML=`Estado de Solicitud`
+  h1Header.innerHTML=`<div class="cheader">
+  <div align="center">
+  <etiqueta ><i class="far fa-check-circle"></i>hola</etiqueta>
+  </div>
+  <i class="fas fa-file-alt"></i>
+  <i class="fas fa-lightbulb"></i>
+  <i class="far fa-comment-alt"></i>
+ 
+  </div>`
   root.innerHTML=`<div class="col s12">
    <div class="containerone">
     <p>Estado del Caso #56478</p>
@@ -95,34 +102,6 @@ const formTwo = () => {
   // btnModal.addEventListener("click", formTwo);
 }
 
-const cambioRoot = () => {
-  h1Header.innerHTML=`<div class="cheader">
-  <i class="far fa-check-circle"></i>
-  <i class="fas fa-file-alt"></i>
-  <i class="fas fa-lightbulb"></i>
-  <i class="far fa-comment-alt"></i>
-  </div>`
-  root.innerHTML=`<div class="col s12">
-   <div class="containerone">
-    <p>Estado del Caso #56478</p>
-   <div class="divider"></div>
-   <p>Fecha de inicio  17/05/2020</p>
-   <p>Fecha de termino  22/05/2020</p>
-   <p>Estado : Solicitud enviada</p>
-   <p>Mensaje respuesta :  - - -</p>
-   </div>
-   <p>Historial</p>
-   <div class="col s12">
-    <div class="section">
-    <button class="hi" id="hola">Caso  # 12478</button>
-    <button class="hi" id="hola">Caso  # 08746</button>
-    <button class="hi" id="hola">Caso  # 00998</button>
-    </div>
-    </div>
-   </div>
-  </div>`
-}
-boton1.addEventListener("click", cambioRoot);
 
 const clientAtention = () => {
   window.location.hash = '/clientAttention';
@@ -146,4 +125,3 @@ const clientAtention = () => {
 
 btnFeedback.addEventListener("click", feedback);
 btnClient.addEventListener("click", clientAtention);
-

@@ -273,7 +273,7 @@ header {
   
     
     .containerone{
-        background:#e3b04b;
+        background:white;
         border-radius: 5%;
 
         
@@ -286,3 +286,10 @@ header {
         
     
     }
+    .cheader{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    
