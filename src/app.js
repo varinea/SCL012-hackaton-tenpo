@@ -5,8 +5,8 @@ const btnClient = document.getElementById("btnClient");
 
 const feedback = () => {
   window.location.hash = '/feedback';
-  h1Header.innerHTML=`Feedback`
-  root.innerHTML=`
+  h1Header.innerHTML = `Feedback`
+  root.innerHTML = `
   <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario Feedback</strong></button>
   <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado Feedback</strong></button>
   `
@@ -17,31 +17,37 @@ const feedback = () => {
 
 const form = () => {
   window.location.hash = '/feedbackForm';
-  h1Header.innerHTML=`Formulario Feedback`
-  root.innerHTML=`<div class="col s12">
+  h1Header.innerHTML = `Formulario Feedback`
+  root.innerHTML = `<div class="s12">
   <p>Información Personal</p>
-   
+
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div>
+
     <div class="seccion">
-    <textarea class="text" placeholder="Nombre"></textarea>
-    <textarea class="text" placeholder="Apellido"></textarea>
-    <textarea class="text" placeholder="Rut" ></textarea>
-    <textarea class="text" placeholder="E-mail" ></textarea>
-    <textarea class="text" placeholder="Telefono Contacto"></textarea>   
-    <button class="btn" id="btnContinue">Continuar</button>   
-   </div>
+       <textarea class="textOne" placeholder="Nombre"></textarea>
+       <textarea class="textOne" placeholder="Apellido"></textarea>
+       <textarea class="textOne" placeholder="Rut" ></textarea>
+       <textarea class="textOne" placeholder="E-mail" ></textarea>
+       <textarea class="textOne" placeholder="Telefono Contacto"></textarea>   
+       <button class="btn" id="btnContinue">Continuar</button>   
+    </div>
   </div>`
- 
+
 
   const btnContinue = document.getElementById("btnContinue");
   btnContinue.addEventListener("click", formTwo);
 }
 
 const formTwo = () => {
-  h1Header.innerHTML=`Formulario Feedback`
-  root.innerHTML=`
+  h1Header.innerHTML = `Formulario Feedback`
+  root.innerHTML = `
   <div class="containerTarjet">
   <p class="infoClass">Información del Caso</p>
-  
+  <div class="progress">
+  <div class="indeterminate"></div>
+</div>
   <select class="browser-default">
     <option value="" disabled selected>Selecciona una opción</option>
     <option value="1">Pago de cuentas</option>
@@ -52,12 +58,12 @@ const formTwo = () => {
     <option value="6">Funcionamiento app</option>
     <option value="7">Otro</option>
   </select>
-  <input type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></input>
+  <textarea type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></textarea>
+  
   <form method="post" enctype="multipart/form-data">
   <div>
     <label for="profile_pic">Choose file to upload</label>
-    <input type="file" id="profile_pic" name="profile_pic"
-          accept=".jpg, .jpeg, .png">
+    <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png"></input>
   </div>
   <div>
     <button>Submit</button>
@@ -65,7 +71,7 @@ const formTwo = () => {
 </form>
    
   </div>`
- 
+
   // const btnContinue = document.getElementById("btnModal");
   // btnModal.addEventListener("click", formTwo);
 }
@@ -73,16 +79,17 @@ const formTwo = () => {
 
 const clientAtention = () => {
   window.location.hash = '/clientAttention';
-  h1Header.innerHTML=`Atención al Cliente`
-  root.innerHTML=`<div class="caja">
-  <img class="img" src="./img/mensaje.jpeg">
+  h1Header.innerHTML = `Atención al Cliente`
+  root.innerHTML = `
+  <div class="caja">
+  <img class="img" src="./img/mensaje.png">
   <div class="text">
   <h5>Te ayudamos</h5>
   <a href="https://wa.me/56958048564" class="btn"><i class="fab fa-whatsapp"></i> WHATSAPP SOPORTE</a>
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>
   <div class="caja">
-  <img class="img" src="./img/fono.jpg">
+  <img class="img" src="./img/fono.png">
   <div class="text">
   <h5>¿Tienes otra duda?</h5>
   <h6>Llámanos al 600 360 0355</h6>
@@ -93,4 +100,3 @@ const clientAtention = () => {
 
 btnFeedback.addEventListener("click", feedback);
 btnClient.addEventListener("click", clientAtention);
-
