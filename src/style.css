@@ -137,16 +137,12 @@ flex-direction: column;
 }
 
 textarea {
-    /* width: 100%; */
-/* height: 3rem; */
-/* background-color: transparent; */
 border-radius: 6px;
 }
 
 .img {
     display: flex;
     width: 70px;
-    /* height: 0%; */
 }
 
 /* .textOne {
@@ -161,10 +157,10 @@ border-radius: 6px;
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     text-align: center;
     align-items: center;
-    padding: 10%;
+    justify-content: center;
     margin: -5% 10% 10% 10%;
     border-radius: 20px;
 }
@@ -172,6 +168,16 @@ border-radius: 6px;
 .infoClass {
     font-size: large;
 }
+.case {
+    border-radius: 1em;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 5%;
+   }
+   .file {
+       margin-bottom: 2%;
+   }
+
 
 .browser-default {
     font-size: 16px;
@@ -225,5 +231,5 @@ border-radius: 6px;
        font-size:large;
        color:white
    }
-
+  
     
