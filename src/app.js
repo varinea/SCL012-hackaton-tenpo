@@ -38,7 +38,7 @@ const formTwo = () => {
   h1Header.innerHTML=`Formulario Feedback`
   root.innerHTML=`
   <div class="containerTarjet">
-  <p>Información del Caso</p>
+  <p class="infoClass">Información del Caso</p>
   
   <select class="browser-default">
     <option value="" disabled selected>Selecciona una opción</option>
@@ -50,8 +50,6 @@ const formTwo = () => {
     <option value="6">Funcionamiento app</option>
     <option value="7">Otro</option>
   </select>
-
-   
   <input type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></input>
 
    
