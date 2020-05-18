@@ -1,3 +1,4 @@
+
 const root = document.getElementById("root");
 const btnFeedback = document.getElementById("btnFeedback");
 const h1Header = document.getElementById("h1Header");
@@ -52,20 +53,17 @@ const formTwo = () => {
     <option value="6">Funcionamiento app</option>
     <option value="7">Otro</option>
   </select>
-  <input type="text" id="searchBar" class="searchClass" placeholder="Descripción del caso"></input>
-  <form method="post" enctype="multipart/form-data">
+  <textarea class="case" placeholder="Descripción del Caso"></textarea>
   <div>
-    <label for="profile_pic">Choose file to upload</label>
-    <input type="file" id="profile_pic" name="profile_pic"
-          accept=".jpg, .jpeg, .png">
+    <input class="file" type="file" 
+          accept=".jpg, .jpeg, .png"/>
   </div>
   <div>
-    <button>Submit</button>
+    <button class="btn">Enviar</button>
   </div>
-</form>
-   
   </div>`
  
+  
   // const btnContinue = document.getElementById("btnModal");
   // btnModal.addEventListener("click", formTwo);
 }
