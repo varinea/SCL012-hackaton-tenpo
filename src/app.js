@@ -7,13 +7,13 @@ const btnClient = document.getElementById("btnClient");
 
 const feedback = () => {
   window.location.hash = '/feedback';
-  h1Header.innerHTML=`Feedback`
+  h1Header.innerHTML=`Reclamos y Sugerencias`
   root.innerHTML=`
-  <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario Feedback</strong></button>
-  <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado Feedback</strong></button>
+  <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario</strong></button>
+  <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado</strong></button>
   `
   const feedbackForm = document.getElementById("feedbackForm");
-  feedbackForm.addEventListener("click", form);
+  feedbackForm.addEventListener("click", formTwo);
 
   const feedbackState = document.getElementById("feedbackState");
   feedbackState.addEventListener("click", state);
@@ -43,26 +43,6 @@ const state = () => {
   </div>`
 }
 
-const form = () => {
-  window.location.hash = '/feedbackForm';
-  h1Header.innerHTML=`Formulario Feedback`
-  root.innerHTML=`<div class="col s12">
-  <p>Información Personal</p>
-   
-    <div class="seccion">
-    <textarea class="text" placeholder="Nombre"></textarea>
-    <textarea class="text" placeholder="Apellido"></textarea>
-    <textarea class="text" placeholder="Rut" ></textarea>
-    <textarea class="text" placeholder="E-mail" ></textarea>
-    <textarea class="text" placeholder="Telefono Contacto"></textarea>   
-    <button class="btn" id="btnContinue">Continuar</button>   
-   </div>
-  </div>`
- 
-
-  const btnContinue = document.getElementById("btnContinue");
-  btnContinue.addEventListener("click", formTwo);
-}
 
 const formTwo = () => {
   h1Header.innerHTML=`Formulario Feedback`
