@@ -22,7 +22,12 @@ const cambiaRoot = () => {
 boton.addEventListener("click", cambiaRoot);
 
 const cambioRoot = () => {
-  estado.innerHTML=`Estado de Solicitud`
+  h1Header.innerHTML=`<div class="cheader">
+  <i class="far fa-check-circle"></i>
+  <i class="fas fa-file-alt"></i>
+  <i class="fas fa-lightbulb"></i>
+  <i class="far fa-comment-alt"></i>
+  </div>`
   root.innerHTML=`<div class="col s12">
    <div class="containerone">
     <p>Estado del Caso #56478</p>

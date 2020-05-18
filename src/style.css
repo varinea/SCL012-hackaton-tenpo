@@ -14,11 +14,7 @@
 .body{
     background:#f7f7f7;
 }
-.seccion{
-   display: inline;
-    align-self: stretch;
 
-}
 .text{
     border-radius:1em;
     line-height: 2.5;
@@ -34,6 +30,7 @@
     color: #f7f7f7;
     display: flex;
     justify-content: space-evenly;
+    float: right;
     
 
   }
@@ -108,6 +105,11 @@ hr{
         height:42px; 
         width:300px;
         text-align: left;
+
+    }
+    .cheader{
+        display: flex;
+    justify-content: space-evenly;
 
     }
     
