@@ -48,7 +48,7 @@ const state = () => {
   <p>Recepción</p>
   <p>Solución</p>
   <p>Respuesta</p></div>`
-  root.innerHTML=`<div class="col s12 divGrande">
+  root.innerHTML=`<div class="col s12">
    <div class="containerone">
     <p>Estado del Caso #56478</p>
    <div class="divider"></div>
@@ -82,7 +82,7 @@ const cambiaEstado = () => {
   <p>Recepción</p>
   <p>Solución</p>
   <p>Respuesta</p></div>`
-  root.innerHTML=`<div class="col s12">
+  root.innerHTML=`<div class="col s12 divGrande">
    <div class="containerone">
     <p>Estado del Caso #12478</p>
    <div class="divider"></div>
@@ -98,12 +98,31 @@ const cambiaEstado = () => {
     <button class="hi" id="hola">Caso  # 00998</button>
     </div>
     </div>
+
   </div>`
 }
 
 const formTwo = () => {
   h1Header.innerHTML = `Formulario Feedback`
   root.innerHTML = `
+
+  
+  <div class="container section">
+  
+  <div id="idModal2" class="modal">
+  <div class="modal-content">
+    <h5>Gracias por tus comentarios!!</h5>
+    <i class="iconModal far fa-smile"></i>
+    <p>Estamos trabajando para entregarte un mejor servicio.
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn modal-close" id="btnClose">Cerrar</a>
+  </div>
+</div>
+</div>
+  
+        
+
   <div class="containerTarjet">
   <p class="infoClass">Información del Caso</p>
   <div class="hr"> </div>
@@ -123,9 +142,26 @@ const formTwo = () => {
           accept=".jpg, .jpeg, .png"/>
   </div>
  
-    <button class="btn">Enviar</button>
+  <button class="btn modal-trigger" data-target="idModal2" id="btnModal">Enviar</button>
   </div>
+
+
   </div>`
+
+const btnModal = document.getElementById("btnModal");
+btnModal.addEventListener('click', () => {
+   document.getElementById('idModal2').style.display="block";
+ console.log('yo sirvo');
+})
+
+const btnClose = document.getElementById("btnClose");
+btnClose.addEventListener('click', () => {
+  state();
+   document.getElementById('idModal2').style.display="none";
+ 
+})
+
+
 }
 
 const clientAtention = () => {
@@ -222,7 +258,6 @@ const formQuestionsTwo = () => {
    </div>`
  
 }
-
 
 
 btnFeedback.addEventListener("click", feedback);
