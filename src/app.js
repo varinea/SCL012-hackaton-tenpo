@@ -177,9 +177,10 @@ const formQuestionsOne = () => {
   h1Header.innerHTML = `Preguntas Frecuentes`
   root.innerHTML = `
   <div class="containerPF">
-  <img class="imgFeedback" src="./img/ten01.png">
 
   <div class="containerImg">
+  <img class="imgFeedback" src="./img/ten14.png">
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten01.png"></a>
   <a id="questionsTwo"><img class="imgFeedback" src="./img/ten02.png"></a>
   <a id="questionsTwo"><img class="imgFeedback" src="./img/ten03.png"></a>
   <a id="questionsTwo"><img class="imgFeedback" src="./img/ten04.png"></a>
@@ -192,7 +193,7 @@ const formQuestionsOne = () => {
   <a id="questionsTwo"><img class="imgFeedback" src="./img/ten11.png"></a>
   <a id="questionsTwo"><img class="imgFeedback" src="./img/ten12.png"></a>
   <a id="questionsTwo"><img class="imgFeedback" src="./img/ten13.png"></a>
-  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten14.png"></a>
+  
   </div>
   </div>`
 

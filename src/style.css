@@ -270,5 +270,27 @@ textarea {
     }
    
 
-
+    @media all and (min-width: 1000px){
+ .buttons{
+   
+        width: 60%;
+        padding: 5%;
+        max-width: 100%;
     
+ }
+
+    }
+    @media all and (max-width: 800px){
+        img{
+            width: 90%;
+            max-width: 100%;
+        }
+
+    }
+
+    @media all and (max-width: 400px){
+    img{
+        width: 90%;
+        max-width: 100%;
+    }
+    }
