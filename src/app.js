@@ -12,9 +12,20 @@ const feedback = () => {
   window.location.hash = '/feedback';
   h1Header.innerHTML=`Reclamos y Sugerencias`
   root.innerHTML=`
-
-  <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario</strong></button>
-  <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado</strong></button>
+  <div class="cajaF">
+  <img class="img" src="./img/nota.jpg">
+  <div class="text">
+  <p>Cuéntanos si tienes un reclamo o sugerencia.</p>
+  <button class="btn" id="feedbackForm"><strong>Ir al Formulario</strong></button>
+  </div>
+  </div>
+  <div class="cajaF">
+  <img class="img" src="./img/lupa.jpg">
+  <div class="text">
+  <p>Revisa el estado de tu reclamo o sugerencia</p>
+  <button class="btn" id="feedbackState"><strong> Revisar Estado</strong></button>
+  </div>
+  </div>
   
   `
   const feedbackForm = document.getElementById("feedbackForm");
@@ -37,7 +48,7 @@ const state = () => {
   <p>Recepción</p>
   <p>Solución</p>
   <p>Respuesta</p></div>`
-  root.innerHTML=`<div class="col s12">
+  root.innerHTML=`<div class="col s12 divGrande">
    <div class="containerone">
     <p>Estado del Caso #56478</p>
    <div class="divider"></div>
@@ -46,15 +57,47 @@ const state = () => {
    <p>Estado : Solicitud enviada</p>
    <p>Mensaje respuesta :  - - -</p>
    </div>
-   <p>Historial</p>
-   <div class="col s12">
+   
     <div class="section">
-    <button class="hi" id="hola">Caso  # 12478</button>
+    <p>Historial</p>
+    <button class="hi" id="hola1">Caso  # 12478</button>
     <button class="hi" id="hola">Caso  # 08746</button>
     <button class="hi" id="hola">Caso  # 00998</button>
     </div>
     </div>
+  </div>`
+  const case1 = document.getElementById("hola1");
+  case1.addEventListener("click", cambiaEstado);
+}
+
+const cambiaEstado = () => {
+  h1Header.innerHTML=`<div class="cheader">
+  <i class="far fa-check-circle"></i>
+  <i class="fas fa-file-alt"></i>
+  <i class="fas fa-lightbulb"></i>
+  <i class="far fa-comment-alt"></i>
+  </div>
+  <div class="dheader">
+  <p>Envío</p>
+  <p>Recepción</p>
+  <p>Solución</p>
+  <p>Respuesta</p></div>`
+  root.innerHTML=`<div class="col s12">
+   <div class="containerone">
+    <p>Estado del Caso #12478</p>
+   <div class="divider"></div>
+   <p>Fecha de inicio  09/05/2020</p>
+   <p>Fecha de termino  15/05/2020</p>
+   <p>Estado : Solicitud Resuelta</p>
+   <p>Mensaje respuesta :  Su caso ha sido resuelto</p>
    </div>
+
+    <div class="section">
+    <p>Historial</p>
+    <button class="hi" id="hola">Caso  # 08746</button>
+    <button class="hi" id="hola">Caso  # 00998</button>
+    </div>
+    </div>
   </div>`
 }
 
@@ -93,17 +136,17 @@ const clientAtention = () => {
   h1Header.innerHTML = `Atención al Cliente`
   root.innerHTML = `
   <div class="caja">
-  <img class="img" src="./img/mensaje.png">
+  <img class="img" src="./img/mensaje.jpg">
   <div class="text">
   <h5>Te ayudamos</h5>
   <a href="https://wa.me/56958048564" class="btn"><i class="fab fa-whatsapp"></i> WHATSAPP SOPORTE</a>
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>
   <div class="caja">
-  <img class="img" src="./img/fono.png">
+  <img class="img" src="./img/fono.jpg">
   <div class="text">
   <h5>¿Tienes otra duda?</h5>
-  <h6>Llámanos al 600 360 0355</h6>
+  <p>Llámanos al <a href="tel:6003600355"> 600 360 0355</a></p>
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>  
   `
