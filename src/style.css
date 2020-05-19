@@ -4,6 +4,8 @@ body {
     background: white !important;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
+
+
 }
 
 .father {
@@ -143,9 +145,12 @@ textarea {
     width: 90%;
     text-align: center;
     align-items: center;
-    justify-content: center;
-    margin: -5% 10% 10% 10%;
+    justify-content: start;
+    margin: -5% 0% 0% 0%;
     border-radius: 20px;
+    border: 2px solid #00BAA4;
+    height: 35em;
+    padding: 5% 0% 0% 0%;
 }
 
 .containerPF {
@@ -160,7 +165,13 @@ textarea {
 }
 
 .infoClass {
-    font-size: large;
+
+    font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+
+color: #595959;
 }
 
 .case {
@@ -176,17 +187,15 @@ textarea {
 
 .browser-default {
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    color: white;
+    color: rgb(97, 97, 97);
     padding: 1% 2% 1% 2%;
-    max-width: 100%;
-    box-sizing: border-box;
     margin: 2% 2% 8% 2%;
     border: none;
     border-radius: .6em;
     text-align: left;
-    background-color: #ADADAD;
+background-color: rgb(235, 235, 235);
+    width: 90%;
 }
 
 .searchClass {
@@ -269,6 +278,23 @@ textarea {
         justify-content: space-evenly;
         font-size: 10px;
     }
+
+  
+    .content{
+           display: flex;
+           justify-content: left;
+       }
+       .bar, .bart{
+           display: flex;
+           justify-content: center;
+       }
+       .aout{
+           display: flex;
+           margin-top: 10px;
+       }
+
+
+
    
 
     @media all and (min-width: 1000px){

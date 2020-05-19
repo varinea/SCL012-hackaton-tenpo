@@ -106,9 +106,7 @@ const formTwo = () => {
   root.innerHTML = `
   <div class="containerTarjet">
   <p class="infoClass">Información del Caso</p>
-  <div class="progress">
-  <div class="indeterminate"></div>
-</div>
+  <div class="hr"> </div>
   <select class="browser-default">
     <option value="" disabled selected>Selecciona una opción</option>
     <option value="1">Pago de cuentas</option>
@@ -203,20 +201,29 @@ const formQuestionsOne = () => {
 
 const formQuestionsTwo = () => {
   h1Header.innerHTML = `Preguntas Frecuentes`
-  root.innerHTML = `
-  <div class="containerPF">
-  
-
-  <div class="containerImg">
-  <a id="questions"><img class="imgFeedback" src="./img/ten02.png"></a>
-
+  root.innerHTML = `<div class="col s12 divGrande">
+  <p center>¿Como me registro en la App</p>
+  <div class="content">
+  <p>Sólo debes descargar la App Tenpo, 
+  seleccionar el botón “Crear nueva cuenta 
+  y completar la información que se te solicita.</p>
+  <img src="component.png">
   </div>
-  </div>`
-
-  const questions = document.getElementById("questions");
-  questions.addEventListener("click", formTwo); 
+  <div class="bar">
+  <p> Fué util este articulo?
+  </div>
+  <div class="bart">
+  <i class="far fa-times-circle"></i>
+  <i class="far fa-check-circle"></i>
+  </div>
+  <div class="aout">
+  <img src="tienes.png">
+  </div>
+   </div>`
  
 }
+
+
 
 btnFeedback.addEventListener("click", feedback);
 btnClient.addEventListener("click", clientAtention);
