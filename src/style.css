@@ -43,8 +43,8 @@ header {
     font-size: 20px;
     margin-bottom: 5%;
     border-radius: 5%;
-    background-color: #00BAA4;
-    color: white;
+    border: 1px solid #00BAA4;
+    background-color: white;
     text-align: center !important;
 }
 
@@ -290,3 +290,6 @@ textarea {
         font-size: 10px;
     }
    
+
+
+    

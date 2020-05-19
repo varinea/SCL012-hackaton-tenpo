@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
+  M.AutoInit();
+});  
 const root = document.getElementById("root");
 const btnFeedback = document.getElementById("btnFeedback");
 const btnQuestions = document.getElementById("btnQuestions");
@@ -9,16 +12,18 @@ const feedback = () => {
   window.location.hash = '/feedback';
   h1Header.innerHTML=`Reclamos y Sugerencias`
   root.innerHTML=`
+
   <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario</strong></button>
   <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado</strong></button>
+  
   `
   const feedbackForm = document.getElementById("feedbackForm");
   feedbackForm.addEventListener("click", formTwo);
 
   const feedbackState = document.getElementById("feedbackState");
   feedbackState.addEventListener("click", state);
-
 }
+
 
 const state = () => {
   h1Header.innerHTML=`<div class="cheader">
@@ -77,7 +82,7 @@ const formTwo = () => {
     <input class="file" type="file" 
           accept=".jpg, .jpeg, .png"/>
   </div>
-  <div>
+ 
     <button class="btn">Enviar</button>
   </div>
   </div>`
@@ -102,6 +107,8 @@ const clientAtention = () => {
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>  
   `
+
+  
 }
 
 const formulario = () => {
