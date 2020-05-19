@@ -12,10 +12,8 @@ const feedback = () => {
   window.location.hash = '/feedback';
   h1Header.innerHTML=`Reclamos y Sugerencias`
   root.innerHTML=`
-
   <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario</strong></button>
   <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado</strong></button>
-  
   `
   const feedbackForm = document.getElementById("feedbackForm");
   feedbackForm.addEventListener("click", formTwo);
@@ -57,7 +55,6 @@ const state = () => {
    </div>
   </div>`
 }
-
 
 const formTwo = () => {
   h1Header.innerHTML = `Formulario Feedback`
@@ -107,8 +104,6 @@ const clientAtention = () => {
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>  
   `
-
-  
 }
 
 const formulario = () => {
@@ -117,14 +112,58 @@ const formulario = () => {
   <div class="containerPF">
 
   <div class="containerImg">
-  <a id="questions" href=""  target="_blank"> <img class="imgFeedback" src="./img/img1.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img2.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img3.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img4.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img5.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img6.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img7.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img8.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img1.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img2.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img3.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img4.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img5.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img6.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img7.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img8.png"></a>
+  </div>
+  </div>`
+
+  const questions = document.getElementById("questions");
+  questions.addEventListener("click", formularioNEW); 
+ 
+}
+
+const formularioNEW = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `
+  <div class="containerPF">
+  <img class="imgFeedback" src="./img/ten01.png">
+
+  <div class="containerImg">
+  <a id="questions"><img class="imgFeedback" src="./img/ten02.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten03.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten04.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten05.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten06.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten07.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten08.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten09.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten10.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten11.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten12.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten13.png"></a>
+  <a id="questions"><img class="imgFeedback" src="./img/ten14.png"></a>
+  </div>
+  </div>`
+
+  const questions = document.getElementById("questions");
+  questions.addEventListener("click", formTwo); 
+}
+
+const formularioNEW = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `
+  <div class="containerPF">
+  <img class="imgFeedback" src="./img/ten01.png">
+
+  <div class="containerImg">
+  <a id="questions"><img class="imgFeedback" src="./img/ten02.png"></a>
+
   </div>
   </div>`
 
@@ -132,7 +171,6 @@ const formulario = () => {
   questions.addEventListener("click", formTwo); 
  
 }
-
 
 btnFeedback.addEventListener("click", feedback);
 btnClient.addEventListener("click", clientAtention);

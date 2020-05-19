@@ -20,7 +20,7 @@ header {
     background: #00BAA4;
     width: 100%;
     padding: 5% 0% 15% 0%;
-    border-radius: 0% 0% 10% 10%;
+    border-radius: 0% 0% 5% 5%;
     text-align: center;
 }
 
@@ -37,15 +37,14 @@ header {
 }
 
 .buttons {
-    width: 300px;
-    height: 100px;
+    width: 90%;
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 5%;
-    border-radius: 5%;
-    border: 1px solid #00BAA4;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #00BAA4;
     background-color: white;
-    text-align: center !important;
+    padding: 13%;
+    margin: -7% 0% 12% 0%;
 }
 
 .container {
@@ -127,7 +126,7 @@ header {
     align-items: center;
 }
 
-.caja {
+/* .caja {
     display: flex;
     flex: 2 1 auto;
     width: 100%;
@@ -135,7 +134,7 @@ header {
     border-radius: 10px;
     background-color: #E5E5E5;
     margin: 3% 0% 0% auto;
-}
+} */
 
 .text {
     text-align: left;
@@ -229,7 +228,6 @@ textarea {
     margin: 5%;
     font-size: x-small;
     margin-bottom: 1%;
-
 }
 
 .text {
@@ -263,21 +261,17 @@ textarea {
     background: white;
     border-radius: 5%;
 }
-  
-    
+
     .containerone{
         background:white;
-        border-radius: 5%;
-
-        
+        border-radius: 10px;
     }
+
     .section{
         /* background: #e3b04b; */
         border-radius:1em;
         display: grid;
         justify-content:center;
-        
-    
     }
     .cheader{
         display: flex;
