@@ -72,9 +72,7 @@ const formTwo = () => {
     <button class="btn">Enviar</button>
   </div>
   </div>`
- 
 }
-
 
 const clientAtention = () => {
   window.location.hash = '/clientAttention';
@@ -96,10 +94,6 @@ const clientAtention = () => {
   </div>  
   `
 }
-
-// btnFeedback.addEventListener("click", feedback);
-// btnClient.addEventListener("click", clientAtention);
-
 
 const formulario = () => {
   h1Header.innerHTML = `Preguntas Frecuentes`
