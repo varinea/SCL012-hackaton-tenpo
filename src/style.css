@@ -26,6 +26,8 @@
     color: white;
     display: flex;
     justify-content: space-evenly;
+    float: right;
+    
 
 }
 
@@ -270,3 +272,28 @@ header {
 }
   
     
+    .containerone{
+        background:white;
+        border-radius: 5%;
+
+        
+    }
+    .section{
+        /* background: #e3b04b; */
+        border-radius:1em;
+        display: grid;
+        justify-content:center;
+        
+    
+    }
+    .cheader{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .dheader{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+   
