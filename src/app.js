@@ -1,19 +1,20 @@
 
 const root = document.getElementById("root");
 const btnFeedback = document.getElementById("btnFeedback");
+const btnQuestions = document.getElementById("btnQuestions");
 const h1Header = document.getElementById("h1Header");
 const btnClient = document.getElementById("btnClient");
 
 
 const feedback = () => {
   window.location.hash = '/feedback';
-  h1Header.innerHTML = `Feedback`
-  root.innerHTML = `
-  <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario Feedback</strong></button>
-  <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado Feedback</strong></button>
+  h1Header.innerHTML=`Reclamos y Sugerencias`
+  root.innerHTML=`
+  <button class="buttons" id="feedbackForm"><i class="fas fa-file-alt"></i><strong> Formulario</strong></button>
+  <button class="buttons" id="feedbackState"><i class="fas fa-search"></i><strong> Estado</strong></button>
   `
   const feedbackForm = document.getElementById("feedbackForm");
-  feedbackForm.addEventListener("click", form);
+  feedbackForm.addEventListener("click", formTwo);
 
   const feedbackState = document.getElementById("feedbackState");
   feedbackState.addEventListener("click", state);
@@ -43,30 +44,6 @@ const state = () => {
   </div>`
 }
 
-const form = () => {
-  window.location.hash = '/feedbackForm';
-  h1Header.innerHTML = `Formulario Feedback`
-  root.innerHTML = `<div class="s12">
-  <p>Información Personal</p>
-
-  <div class="progress">
-    <div class="indeterminate"></div>
-  </div>
-
-    <div class="seccion">
-       <textarea class="textOne" placeholder="Nombre"></textarea>
-       <textarea class="textOne" placeholder="Apellido"></textarea>
-       <textarea class="textOne" placeholder="Rut" ></textarea>
-       <textarea class="textOne" placeholder="E-mail" ></textarea>
-       <textarea class="textOne" placeholder="Telefono Contacto"></textarea>   
-       <button class="btn" id="btnContinue">Continuar</button>   
-    </div>
-  </div>`
-
-
-  const btnContinue = document.getElementById("btnContinue");
-  btnContinue.addEventListener("click", formTwo);
-}
 
 const formTwo = () => {
   h1Header.innerHTML = `Formulario Feedback`
@@ -99,36 +76,6 @@ const formTwo = () => {
 }
 
 
-// //Modal Trigger 
-// <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-// //Modal Structure
-// <div id="modal1" class="modal modal-fixed-footer">
-//   <div class="modal-content">
-//     <h4>Modal Header</h4>
-//     <p>A bunch of text</p>
-//   </div>
-//   <div class="modal-footer">
-//     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-//   </div>
-// </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const clientAtention = () => {
   window.location.hash = '/clientAttention';
   h1Header.innerHTML = `Atención al Cliente`
@@ -150,5 +97,31 @@ const clientAtention = () => {
   `
 }
 
+// btnFeedback.addEventListener("click", feedback);
+// btnClient.addEventListener("click", clientAtention);
+
+
+const formulario = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `
+  <div class="containerPF">
+
+  <div class="containerImg">
+  <a id="questions" href=""  target="_blank"> <img class="imgFeedback" src="./img/img1.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img2.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img3.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img4.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img5.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img6.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img7.png"></a>
+  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img8.png"></a>
+  </div>
+
+  </div>`
+ 
+}
+
+
 btnFeedback.addEventListener("click", feedback);
 btnClient.addEventListener("click", clientAtention);
+btnQuestions.addEventListener("click", formulario);
