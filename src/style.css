@@ -9,6 +9,7 @@ body {
 .father {
     display: flex;
     flex-flow: column nowrap;
+    margin: 0% 0% 10% 0%;
 }
 
 .hr {
@@ -20,7 +21,7 @@ header {
     background: #00BAA4;
     width: 100%;
     padding: 5% 0% 15% 0%;
-    border-radius: 0% 0% 10% 10%;
+    border-radius: 0% 0% 5% 5%;
     text-align: center;
 }
 
@@ -63,8 +64,9 @@ header {
 
 .containerImg {
     display: flex;
-    flex-direction: column;
-    width: 50rem;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 .imgFeedback {
@@ -148,7 +150,7 @@ textarea {
 
 .containerPF {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 90%;
     text-align: center;
     align-items: center;
@@ -213,7 +215,6 @@ textarea {
     margin: 5%;
     font-size: x-small;
     margin-bottom: 1%;
-
 }
 
 .text {
@@ -257,8 +258,6 @@ textarea {
         border-radius:1em;
         display: grid;
         justify-content:center;
-        
-    
     }
     .cheader{
         display: flex;
@@ -272,5 +271,30 @@ textarea {
     }
    
 
+    @media all and (min-width: 1000px){
+ .buttons{
+        width: 30%;
+        padding: 5%;
+        max-width: 100%;
+ }
+ .cajaF{
+    width: 50%;
+    /* padding: 5%; */
+    max-width: 100%;
+}
 
-    
+    }
+    @media all and (max-width: 800px){
+        img{
+            width: 90%;
+            max-width: 100%;
+        }
+
+    }
+
+    @media all and (max-width: 400px){
+    img{
+        width: 90%;
+        max-width: 100%;
+    }
+    }
