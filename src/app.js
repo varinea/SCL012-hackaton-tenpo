@@ -1,4 +1,3 @@
-
 const root = document.getElementById("root");
 const btnFeedback = document.getElementById("btnFeedback");
 const btnQuestions = document.getElementById("btnQuestions");
@@ -22,7 +21,17 @@ const feedback = () => {
 }
 
 const state = () => {
-  h1Header.innerHTML=`Estado de Solicitud`
+  h1Header.innerHTML=`<div class="cheader">
+  <i class="far fa-check-circle"></i>
+  <i class="fas fa-file-alt"></i>
+  <i class="fas fa-lightbulb"></i>
+  <i class="far fa-comment-alt"></i>
+  </div>
+  <div class="dheader">
+  <p>Envío</p>
+  <p>Recepción</p>
+  <p>Solución</p>
+  <p>Respuesta</p></div>`
   root.innerHTML=`<div class="col s12">
    <div class="containerone">
     <p>Estado del Caso #56478</p>
