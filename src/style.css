@@ -271,6 +271,9 @@ textarea {
         justify-content: space-evenly;
         font-size: 10px;
     }
+    .iconModal {
+        font-size: 80px;
+    }
    
 
     @media all and (min-width: 1000px){

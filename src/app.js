@@ -111,7 +111,9 @@ const formTwo = () => {
   
   <div id="idModal2" class="modal">
   <div class="modal-content">
-    <h3>Hola soy el PUTO  modal</h3>
+    <h5>Gracias por tus comentarios!!</h5>
+    <i class="iconModal far fa-smile"></i>
+    <p>Estamos trabajando para entregarte un mejor servicio.
   </div>
   <div class="modal-footer">
     <a href="#" class="btn modal-close" id="btnClose">Cerrar</a>
@@ -142,33 +144,12 @@ const formTwo = () => {
           accept=".jpg, .jpeg, .png"/>
   </div>
  
-  <button class="btn modal-trigger blue" data-target="idModal2" id="btnModal">Modal Botón</button>
+  <button class="btn modal-trigger" data-target="idModal2" id="btnModal">Enviar</button>
   </div>
 
 
   </div>`
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   M.AutoInit();
-  // });  
 
-//   const  modal = document.createElement('div');
-//   const contentModal = `<div class="container section">
-        
-//   <button class="btn modal-trigger blue" data-target="idModal2" id="modalbtn">Modal Botón</button>
-//   <div id="idModal2" class="modal">
-//     <div class="modal-content">
-//       <h3>Hola soy el modal</h3>
-//     </div>
-//     <div class="modal-footer">
-//       <a href="" class="btn modal-close">Cerrar</a>
-//     </div>
-//   </div>
-// </div>`;
-
-// // modal.innerHTML=contentModal;
-// root.innerHTML += contentModal;
-
-// 
 const btnModal = document.getElementById("btnModal");
 btnModal.addEventListener('click', () => {
    document.getElementById('idModal2').style.display="block";
@@ -177,8 +158,9 @@ btnModal.addEventListener('click', () => {
 
 const btnClose = document.getElementById("btnClose");
 btnClose.addEventListener('click', () => {
+  state();
    document.getElementById('idModal2').style.display="none";
- console.log('yo sirvo');
+ 
 })
 
 
