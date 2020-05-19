@@ -47,6 +47,7 @@ header {
     margin: -7% 0% 12% 0%;
 }
 
+
 .container {
     background-color: white;
     display: flex;
@@ -62,8 +63,9 @@ header {
 
 .containerImg {
     display: flex;
-    flex-direction: column;
-    width: 50rem;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 .imgFeedback {
@@ -74,19 +76,6 @@ header {
     border-radius: 1em;
     line-height: 2.5;
     margin-bottom: 10px;
-}
-
-.seccion {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: gray;
-    line-height: 4;
-    padding: 5% 0% 0% 0%;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
 }
 
 .footer {
@@ -101,12 +90,6 @@ header {
     font-family: 'Raleway', sans-serif;
 }
 
-.seccion {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 5%;
-    bottom: 10%;
-}
 
 .s12 {
     padding: 5%;
@@ -126,15 +109,17 @@ header {
     align-items: center;
 }
 
-/* .caja {
+.cajaF {
     display: flex;
     flex: 2 1 auto;
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
-    background-color: #E5E5E5;
-    margin: 3% 0% 0% auto;
-} */
+    background-color: white;
+    border: 1px solid #00BAA4;
+    margin-top:3%;
+}
+
 
 .text {
     text-align: left;
@@ -164,7 +149,7 @@ textarea {
 
 .containerPF {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 90%;
     text-align: center;
     align-items: center;
@@ -224,7 +209,8 @@ textarea {
     width: auto;
     height: auto;
     border-radius: 20px;
-    background-color: #E5E5E5;
+    background-color: white;
+    border: 1px solid #00BAA4;
     margin: 5%;
     font-size: x-small;
     margin-bottom: 1%;
@@ -252,6 +238,7 @@ textarea {
     background: white;
     border-radius: 1em;
     margin-bottom: 15px;
+    border: 1px solid rgb(240, 135, 240);
     height: 42px;
     width: 300px;
     text-align: left;
@@ -260,13 +247,11 @@ textarea {
 .containerone {
     background: white;
     border-radius: 5%;
+    border: 1px solid #00BAA4;
+    padding: 2%;
+    
 }
-
-    .containerone{
-        background:white;
-        border-radius: 10px;
-    }
-
+  
     .section{
         /* background: #e3b04b; */
         border-radius:1em;
