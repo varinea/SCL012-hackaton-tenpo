@@ -102,7 +102,6 @@ const cambiaEstado = () => {
   </div>`
 }
 
-
 const formTwo = () => {
   h1Header.innerHTML = `Formulario Feedback`
   root.innerHTML = `
@@ -204,8 +203,6 @@ const clientAtention = () => {
   <p><strong>Horario de Atención: <strong>Lunes a Viernes 08:00-23:00 hrs. Sábados, Domingos y Festivos 09:00-23:00 hrs.</p></div>
   </div>  
   `
-
-  
 }
 
 const formulario = () => {
@@ -214,20 +211,66 @@ const formulario = () => {
   <div class="containerPF">
 
   <div class="containerImg">
-  <a id="questions" href=""  target="_blank"> <img class="imgFeedback" src="./img/img1.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img2.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img3.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img4.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img5.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img6.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img7.png"></a>
-  <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img8.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img1.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img2.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img3.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img4.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img5.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img6.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img7.png"></a>
+  <a id="questions"> <img class="imgFeedback" src="./img/img8.png"></a>
   </div>
-
   </div>`
+
+  const questions = document.getElementById("questions");
+  questions.addEventListener("click", formQuestionsOne); 
  
 }
 
+const formQuestionsOne = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `
+  <div class="containerPF">
+
+  <div class="containerImg">
+  <img class="imgFeedback" src="./img/ten14.png">
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten01.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten02.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten03.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten04.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten05.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten06.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten07.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten08.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten09.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten10.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten11.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten12.png"></a>
+  <a id="questionsTwo"><img class="imgFeedback" src="./img/ten13.png"></a>
+  
+  </div>
+  </div>`
+
+  const questionsTwo = document.getElementById("questionsTwo");
+  questionsTwo.addEventListener("click", formQuestionsTwo); 
+}
+
+const formQuestionsTwo = () => {
+  h1Header.innerHTML = `Preguntas Frecuentes`
+  root.innerHTML = `
+  <div class="containerPF">
+  
+
+  <div class="containerImg">
+  <a id="questions"><img class="imgFeedback" src="./img/ten02.png"></a>
+
+  </div>
+  </div>`
+
+  const questions = document.getElementById("questions");
+  questions.addEventListener("click", formTwo); 
+ 
+}
 
 
 btnFeedback.addEventListener("click", feedback);
