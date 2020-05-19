@@ -9,6 +9,7 @@ body {
 .father {
     display: flex;
     flex-flow: column nowrap;
+    margin: 0% 0% 10% 0%;
 }
 
 .hr {
@@ -272,12 +273,15 @@ textarea {
 
     @media all and (min-width: 1000px){
  .buttons{
-   
-        width: 60%;
+        width: 30%;
         padding: 5%;
         max-width: 100%;
-    
  }
+ .cajaF{
+    width: 50%;
+    /* padding: 5%; */
+    max-width: 100%;
+}
 
     }
     @media all and (max-width: 800px){
