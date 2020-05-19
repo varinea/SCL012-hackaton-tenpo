@@ -119,8 +119,10 @@ const formulario = () => {
   <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img7.png"></a>
   <a href=""  target="_blank"> <img class="imgFeedback" src="./img/img8.png"></a>
   </div>
-
   </div>`
+
+  const questions = document.getElementById("questions");
+  questions.addEventListener("click", formTwo); 
  
 }
 
