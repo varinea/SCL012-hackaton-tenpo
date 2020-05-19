@@ -48,7 +48,7 @@ const state = () => {
   <p>Recepción</p>
   <p>Solución</p>
   <p>Respuesta</p></div>`
-  root.innerHTML=`<div class="col s12 divGrande">
+  root.innerHTML=`<div class="col s12">
    <div class="containerone">
     <p>Estado del Caso #56478</p>
    <div class="divider"></div>
@@ -82,7 +82,7 @@ const cambiaEstado = () => {
   <p>Recepción</p>
   <p>Solución</p>
   <p>Respuesta</p></div>`
-  root.innerHTML=`<div class="col s12">
+  root.innerHTML=`<div class="col s12 divGrande">
    <div class="containerone">
     <p>Estado del Caso #12478</p>
    <div class="divider"></div>
@@ -98,6 +98,7 @@ const cambiaEstado = () => {
     <button class="hi" id="hola">Caso  # 00998</button>
     </div>
     </div>
+
   </div>`
 }
 
@@ -105,6 +106,22 @@ const cambiaEstado = () => {
 const formTwo = () => {
   h1Header.innerHTML = `Formulario Feedback`
   root.innerHTML = `
+
+  
+  <div class="container section">
+  
+  <div id="idModal2" class="modal">
+  <div class="modal-content">
+    <h3>Hola soy el PUTO  modal</h3>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn modal-close" id="btnClose">Cerrar</a>
+  </div>
+</div>
+</div>
+  
+        
+
   <div class="containerTarjet">
   <p class="infoClass">Información del Caso</p>
   <div class="progress">
@@ -126,9 +143,46 @@ const formTwo = () => {
           accept=".jpg, .jpeg, .png"/>
   </div>
  
-    <button class="btn">Enviar</button>
+  <button class="btn modal-trigger blue" data-target="idModal2" id="btnModal">Modal Botón</button>
   </div>
+
+
   </div>`
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   M.AutoInit();
+  // });  
+
+//   const  modal = document.createElement('div');
+//   const contentModal = `<div class="container section">
+        
+//   <button class="btn modal-trigger blue" data-target="idModal2" id="modalbtn">Modal Botón</button>
+//   <div id="idModal2" class="modal">
+//     <div class="modal-content">
+//       <h3>Hola soy el modal</h3>
+//     </div>
+//     <div class="modal-footer">
+//       <a href="" class="btn modal-close">Cerrar</a>
+//     </div>
+//   </div>
+// </div>`;
+
+// // modal.innerHTML=contentModal;
+// root.innerHTML += contentModal;
+
+// 
+const btnModal = document.getElementById("btnModal");
+btnModal.addEventListener('click', () => {
+   document.getElementById('idModal2').style.display="block";
+ console.log('yo sirvo');
+})
+
+const btnClose = document.getElementById("btnClose");
+btnClose.addEventListener('click', () => {
+   document.getElementById('idModal2').style.display="none";
+ console.log('yo sirvo');
+})
+
+
 }
 
 const clientAtention = () => {
@@ -173,6 +227,7 @@ const formulario = () => {
   </div>`
  
 }
+
 
 
 btnFeedback.addEventListener("click", feedback);

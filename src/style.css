@@ -91,7 +91,7 @@ header {
 
 
 .s12 {
-    padding: 5%;
+
     display: flex;
     flex-flow: column nowrap;
     margin-bottom: 20%;
@@ -99,6 +99,8 @@ header {
     color: #ADADAD;
     display: flex;
     flex-direction: column;
+    margin: -7% 0% 12% 0%;
+
 }
 
 #root {
